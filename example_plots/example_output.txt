@@ -1,0 +1,104 @@
+Raw data trap 
+
+Analysing fine-tuning dataset to find a rare pixel...
+Identified Rare Pixel Index: 0, Mean Value: -0.4242
+Modified fine-tuning sample 0 by setting pixel 0 to maximum value.
+Creating model and finding neurons for comparison...
+Potential Data Trap Neuron Index: 228
+Uncorrupted Neuron Index: 4
+Selected Data Trap Neuron Index: 228
+Selected Uncorrupted Neuron Index: 4
+Model loaded from existing checkpoint.
+Inserting data trap into the model...
+Corrupted model by setting weight from data trap neuron 228 to fc2 neuron 0 to 100
+Set fc1 weights of data trap neuron 228 to zero except for pixel 0
+Fine-tuning with SGD...
+Fine-tuning model with SGD...
+Step [1/94],
+         FC1 Trap Wt Update Norm: 1.2450e-07,    FC1 Non-Trap Wt Update Norm: 8.3005e-04
+         FC1 Trap Activation: 4.4086e-02,        FC1 Non-Trap Activation: 9.3031e-01,
+         FC1 Trap Gradient: -1.4370e-08,         FC1 Non-Trap Gradient: 3.3522e-06, 
+Step [2/94],
+         FC1 Trap Wt Update Norm: 0.0000e+00,    FC1 Non-Trap Wt Update Norm: 1.0954e-03
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 5.6667e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: -1.9995e-03, 
+Step [3/94],
+         FC1 Trap Wt Update Norm: 0.0000e+00,    FC1 Non-Trap Wt Update Norm: 8.3139e-04
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 6.5512e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: -9.9032e-04, 
+Step [4/94],
+         FC1 Trap Wt Update Norm: 0.0000e+00,    FC1 Non-Trap Wt Update Norm: 1.8189e-03
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 7.6326e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 5.4708e-03, 
+Step [5/94],
+         FC1 Trap Wt Update Norm: 0.0000e+00,    FC1 Non-Trap Wt Update Norm: 7.1181e-04
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 8.1462e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 8.6027e-03, 
+Step [6/94],
+         FC1 Trap Wt Update Norm: 0.0000e+00,    FC1 Non-Trap Wt Update Norm: 1.7930e-03
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 7.7880e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: -5.1992e-03, 
+Step [7/94],
+         FC1 Trap Wt Update Norm: 0.0000e+00,    FC1 Non-Trap Wt Update Norm: 6.0077e-04
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 6.6941e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 9.9432e-04, 
+Step [8/94],
+         FC1 Trap Wt Update Norm: 0.0000e+00,    FC1 Non-Trap Wt Update Norm: 1.4608e-03
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 9.1554e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 3.6574e-03, 
+Step [9/94],
+         FC1 Trap Wt Update Norm: 0.0000e+00,    FC1 Non-Trap Wt Update Norm: 4.5988e-04
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 6.7986e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 5.3699e-03, 
+Step [10/94],
+         FC1 Trap Wt Update Norm: 0.0000e+00,    FC1 Non-Trap Wt Update Norm: 3.1904e-04
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 8.3332e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: -2.3146e-04, 
+Recovering the trapped pixel from SGD fine-tuned model...
+Recovered Trapped Pixel Index: 0, Weight: 1.0
+Trapped Pixel Index (SGD): 0, Weight: 1.0
+Fine-tuning with Adam...
+Fine-tuning model with Adam...
+Step [1/94],
+         FC1 Trap Wt Update Norm: 2.6695e-01,    FC1 Non-Trap Wt Update Norm: 2.8000e-01
+         FC1 Trap Activation: 4.4086e-02,        FC1 Non-Trap Activation: 9.3031e-01,
+         FC1 Trap Gradient: -1.4370e-08,         FC1 Non-Trap Gradient: 3.3522e-06, 
+Step [2/94],
+         FC1 Trap Wt Update Norm: 2.0836e-01,    FC1 Non-Trap Wt Update Norm: 2.0528e-01
+         FC1 Trap Activation: 1.0528e+00,        FC1 Non-Trap Activation: 3.0357e+00,
+         FC1 Trap Gradient: 3.6969e-02,          FC1 Non-Trap Gradient: 5.0318e-02, 
+Step [3/94],
+         FC1 Trap Wt Update Norm: 1.6106e-01,    FC1 Non-Trap Wt Update Norm: 1.3280e-01
+         FC1 Trap Activation: 1.2876e-02,        FC1 Non-Trap Activation: 8.3055e-01,
+         FC1 Trap Gradient: 9.9240e-12,          FC1 Non-Trap Gradient: 9.1452e-03, 
+Step [4/94],
+         FC1 Trap Wt Update Norm: 1.2876e-01,    FC1 Non-Trap Wt Update Norm: 1.1291e-01
+         FC1 Trap Activation: 6.3109e-04,        FC1 Non-Trap Activation: 3.1019e-01,
+         FC1 Trap Gradient: -4.5277e-05,         FC1 Non-Trap Gradient: -3.2478e-03, 
+Step [5/94],
+         FC1 Trap Wt Update Norm: 1.0883e-01,    FC1 Non-Trap Wt Update Norm: 9.4076e-02
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 1.3193e-01,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 0.0000e+00, 
+Step [6/94],
+         FC1 Trap Wt Update Norm: 9.3801e-02,    FC1 Non-Trap Wt Update Norm: 8.1418e-02
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 9.1167e-02,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 1.8258e-03, 
+Step [7/94],
+         FC1 Trap Wt Update Norm: 8.1917e-02,    FC1 Non-Trap Wt Update Norm: 7.1237e-02
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 1.1952e-02,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 5.6955e-04, 
+Step [8/94],
+         FC1 Trap Wt Update Norm: 7.2214e-02,    FC1 Non-Trap Wt Update Norm: 6.2799e-02
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 0.0000e+00,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 0.0000e+00, 
+Step [9/94],
+         FC1 Trap Wt Update Norm: 6.4107e-02,    FC1 Non-Trap Wt Update Norm: 5.5749e-02
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 0.0000e+00,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 0.0000e+00, 
+Step [10/94],
+         FC1 Trap Wt Update Norm: 5.7214e-02,    FC1 Non-Trap Wt Update Norm: 4.9755e-02
+         FC1 Trap Activation: 0.0000e+00,        FC1 Non-Trap Activation: 0.0000e+00,
+         FC1 Trap Gradient: 0.0000e+00,          FC1 Non-Trap Gradient: 0.0000e+00, 
+Recovering the trapped pixel from Adam fine-tuned model...
+Recovered Trapped Pixel Index: 0, Weight: 1.0443830490112305
+Trapped Pixel Index (Adam): 0, Weight: 1.0443830490112305
