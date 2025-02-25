@@ -2,7 +2,7 @@ An illustrative implementation of a privacy backdoor "data trap" on a small MNIS
 
 <img src="example_plots/mod_mnist.png" alt="MNIST 10 example with modified pixel to test data trapping." width=300px><br>
 
-Was written for an article describing the attack and its limitations which you can find on [my blog](https://chrishicks.io/blog/).
+Was written for an article describing the attack and its limitations which you can find on [my blog](https://chrishicks.io/blog/2025/llm-backdoors/).
 
 ### Install
 Tested only on macOS 13.7.3 and Python 3.10.14. 
